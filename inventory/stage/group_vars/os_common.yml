@@ -1,0 +1,8 @@
+---
+
+open_ports:
+  - 22/tcp
+  - 80/tcp
+  - 443/tcp
+  - 5432/tcp
+  - 8000/tcp

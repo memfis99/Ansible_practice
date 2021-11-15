@@ -1,0 +1,5 @@
+---
+
+- name: 'open ports firewall'
+  import_tasks: 'firewall.yml'
+  tags: ['open ports firewall']
