@@ -1,6 +1,13 @@
+---
+
 - name: reload firewall
   service:
     name: firewalld
     state: reloaded
     daemon_reload: yes
     enabled: yes
+
+- name: reload NetworkManager
+  service:
+    name: NetworkManager
+    state: reloaded
