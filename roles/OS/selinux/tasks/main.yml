@@ -3,3 +3,4 @@
 - name: 'CONFIG | config selinux'
   import_tasks: "config.yml"
   tags: ['selinux', 'selinux::config']
+
