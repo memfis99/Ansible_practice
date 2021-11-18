@@ -6,7 +6,7 @@
     state: started
     enabled: yes
 
-- name: open ports irewall
+- name: open ports firewall
   firewalld:
     zone: public
     port: '{{item}}'
