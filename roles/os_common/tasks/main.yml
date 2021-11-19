@@ -1,5 +1,6 @@
 ---
 
+<<<<<<< HEAD
 - name: 'open ports firewall'
   import_tasks: 'firewall.yml'
   tags: ['open ports firewall']
@@ -11,3 +12,8 @@
 - name: 'set-host name'
   import_tasks: 'change_hn.yml'
   tags: [ 'set-host name' ]
+
+- name: 'COMMON_PACKAGES | install common packages'
+  import_tasks: "common_packages.yml"
+  tags: ['os_common', 'os_common::common_packages']
+f
