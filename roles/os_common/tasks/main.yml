@@ -1,8 +1,8 @@
 ---
 
-- name: 'CONFIG | config os_common'
-  import_tasks: "config.yml"
-  tags: ['os_common', 'os_common::config']
+- name: 'config selinux'
+  import_tasks: 'selinux.yml'
+  tags: ['config selinux']
 
 - name: 'open ports firewall'
   import_tasks: 'firewall.yml'
