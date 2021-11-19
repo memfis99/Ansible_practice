@@ -1,6 +1,0 @@
----
-
-- hosts: all_hosts
-  become: true
-  roles:
-    - os_common
