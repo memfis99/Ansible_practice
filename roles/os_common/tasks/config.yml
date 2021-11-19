@@ -19,3 +19,4 @@
       changed_when: false
       when: virt.stdout != "lxc"
 
+
