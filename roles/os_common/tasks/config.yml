@@ -1,14 +1,20 @@
 ---
 
-- name: Configure selinux
+- name: Configure os_common
   block:
+    - name: Find out if it is baremetal or vm
+      command: "systemd-detect-virt"
+      register: virt
+      ignore_errors: true
 
     - name: selinux disable permanently
       selinux:
         policy: targeted
         state: permissive
+      when: virt.stdout != "lxc"
 
     - name: set in permissive without reboot
       command: setenforce 0
       ignore_errors: true
       changed_when: false
+      when: virt.stdout != "lxc"
