@@ -1,0 +1,5 @@
+---
+
+- name: 'COMMON_PACKAGES | install common packages'
+  import_tasks: "common_packages.yml"
+  tags: ['os_common', 'os_common::common_packages']

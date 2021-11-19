@@ -1,0 +1,22 @@
+---
+
+- name: Install base needed yum-packages
+  block:
+    - name: Install EPEL repo
+      dnf:
+        name: epel-release
+        state: present
+
+    - name: Install base packages
+      dnf:
+        name: '{{ item }}'
+        state: latest
+      loop:
+        - python3-devel
+        - python3-virtualenv
+        - python3-pip
+        - tcl-devel
+        - tk-devel
+#        - python36-tkinter
+        - git
+#        - python36-virtualenv
