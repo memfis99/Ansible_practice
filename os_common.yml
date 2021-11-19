@@ -1,6 +1,0 @@
----
-
-- hosts: servers
-
-  roles:
-    - os_common
