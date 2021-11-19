@@ -1,0 +1,18 @@
+---
+
+- name: start firewalld
+  service:
+    name: firewalld
+    state: started
+    enabled: yes
+
+- name: open ports irewall
+  firewalld:
+    zone: public
+    port: '{{item}}'
+    permanent: true
+    state: enabled
+  loop:
+    '{{open_ports}}'
+  notify:
+    - reload firewall

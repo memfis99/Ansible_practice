@@ -1,0 +1,13 @@
+---
+
+open_ports:
+  - 22/tcp
+  - 80/tcp
+  - 443/tcp
+  - 5432/tcp
+  - 8000/tcp
+
+new_hostname:
+  webserver1
+#ansible_user                 : ozznoy
+#ansible_ssh_private_key_file : /home/ozznoy/.ssh/universal
