@@ -8,9 +8,9 @@
   import_tasks: 'set-dns.yml'
   tags: ['set-dns host']
 
-- name: 'config selinux'
-  import_tasks: 'selinux.yml'
-  tags: ['config selinux']
+- name: 'CONFIG | config os_common'
+  import_tasks: "config.yml"
+  tags: ['os_common', 'os_common::config']
 
 - name: 'COMMON_PACKAGES | install common packages'
   import_tasks: "common_packages.yml"
