@@ -1,17 +1,23 @@
 ---
 
-- name: 'config selinux'
-  import_tasks: 'selinux.yml'
-  tags: ['config selinux']
-
-- name: 'open ports firewall'
-  import_tasks: 'firewall.yml'
-  tags: ['open ports firewall']
+- name: 'set-host name'
+  import_tasks: 'change_hn.yml'
+  tags: [ 'set-host name' ]
 
 - name: 'set-dns host'
   import_tasks: 'set-dns.yml'
   tags: ['set-dns host']
 
-- name: 'set-host name'
-  import_tasks: 'change_hn.yml'
-  tags: [ 'set-host name' ]
+- name: 'config selinux'
+  import_tasks: 'selinux.yml'
+  tags: ['config selinux']
+
+- name: 'COMMON_PACKAGES | install common packages'
+  import_tasks: "common_packages.yml"
+  tags: ['os_common', 'os_common::common_packages']
+
+- name: 'open ports firewall'
+  import_tasks: 'firewall.yml'
+  tags: ['open ports firewall']
+
+
