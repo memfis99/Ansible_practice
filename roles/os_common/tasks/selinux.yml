@@ -1,0 +1,14 @@
+---
+
+- name: Configure selinux
+  block:
+
+    - name: selinux disable permanently
+      selinux:
+        policy: targeted
+        state: permissive
+
+    - name: set in permissive without reboot
+      command: setenforce 0
+      ignore_errors: true
+      changed_when: false
