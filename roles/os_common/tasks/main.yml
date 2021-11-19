@@ -1,6 +1,6 @@
 ---
 
-<<<<<<< HEAD
+
 - name: 'open ports firewall'
   import_tasks: 'firewall.yml'
   tags: ['open ports firewall']
@@ -16,4 +16,4 @@
 - name: 'COMMON_PACKAGES | install common packages'
   import_tasks: "common_packages.yml"
   tags: ['os_common', 'os_common::common_packages']
-f
+
