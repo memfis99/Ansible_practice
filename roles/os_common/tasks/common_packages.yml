@@ -12,11 +12,45 @@
         name: '{{ item }}'
         state: latest
       loop:
+        - bash-completion
+        - bind-utils
+        - bwm-ng
+        - bzip2
+        - cloud-utils-growpart
+        - curl
+        - fio
+        - firewalld
+        - fping
+        - gdisk
+        - git
+        - gzip
+        - htop
+        - iftop
+        - iotop
+        - iperf3
+        - jq
+        - lshw
+        - lsof
+        - lz4
+        - nano
+        - nc
+        - ncdu
+        - net-tools
+        - procps-ng
+        - psmisc
         - python3-devel
         - python3-virtualenv
         - python3-pip
+        - pv
+        - rsync
+        - screen
+        - tar
         - tcl-devel
+        - tcpdump
+        - telnet
         - tk-devel
-#        - python36-tkinter
-        - git
-#        - python36-virtualenv
+        - traceroute
+        - tree
+        - unzip
+        - vim
+        - wget
