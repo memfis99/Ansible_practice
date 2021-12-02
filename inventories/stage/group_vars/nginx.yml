@@ -1,0 +1,10 @@
+---
+
+  user: nginx
+  group: nginx
+  root_dir: "/etc/nginx"
+  consul_service: consul.service
+  logdir: "/var/log/nginx"
+  url_project: "95.163.215.156"
+  django1: "95.163.215.157"
+  django2: "95.163.215.158"
