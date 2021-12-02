@@ -1,0 +1,12 @@
+---
+
+- name: Prepare step for nginx
+  block:
+    - name: create directory for nginx files
+      file:
+        path: "{{ root_dir }}"
+        state: directory
+        mode: 0755
+        owner: root
+        group: root
+

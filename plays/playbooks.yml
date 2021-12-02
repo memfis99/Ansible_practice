@@ -4,3 +4,8 @@
   become: true
   roles:
     - os_common
+
+- hosts: nginx_hosts
+  become: true
+  roles:
+    - nginx

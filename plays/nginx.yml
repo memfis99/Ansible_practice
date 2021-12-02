@@ -1,0 +1,6 @@
+---
+
+- hosts: nginx_hosts
+
+  roles:
+    - nginx
